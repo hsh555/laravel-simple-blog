@@ -1,0 +1,122 @@
+body {
+    background-color: #eee !important;
+}
+.wrapper {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(13, 4, 39);
+    position: fixed;
+    color: #fff;
+
+    .aside__logout-btn {
+        border-radius: 0 !important;
+        outline: 0 !important;
+        font-size: 18px;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.admin-nav {
+    width: 100%;
+    margin: 30px 0 !important;
+    padding: 0 !important;
+
+    .admin-nav__nav-item {
+        font-size: 16px;
+    }
+
+    .admin-nav__nav-link {
+        color: #fff !important;
+    }
+
+    .admin-nav__collapse-toggler {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .admin-nav__collapse {
+        padding: 15px;
+        // display: block;
+        // flex-direction: column;
+        background: #fff;
+
+        .admin-nav__collapse-link {
+            display: block;
+            font-size: 14px;
+            color: #555 !important;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.main {
+    margin-left: 200px;
+    width: 100%;
+
+    .main__header {
+        background-color: #fff;
+        padding: 15px !important;
+        box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.1);
+        .main__header__brand {
+            color: #e3342f !important;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                color: #b40c06 !important;
+            }
+        }
+    }
+
+    .main__content {
+        margin: 30px;
+        .main__content__inner {
+            background-color: #fff;
+            box-shadow: 0 0 5px -4px rgba(0, 0, 0, 0.2);
+            border-radius: 7px;
+            padding: 30px;
+        }
+    }
+}
+
+.info-box {
+    border-radius: 3px;
+    background-color: rgb(13, 4, 39);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-table {
+    thead {
+        background-color: rgb(13, 4, 39) !important;
+        color: #fff !important;
+    }
+
+    .custom-table__actions {
+        & > span, & > a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 12px !important;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    }
+}
